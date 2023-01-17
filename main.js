@@ -15,4 +15,13 @@ Deux.addEventListener('mouseover',()=>{
     Deux.style.fontSize = '10px';
 })
 // ### 3. Quand on clique sur le paragraphe le fond devient bleu et le texte gold, mais si le fond et déjà bleu et le texte déjà gold alors le fond redevient blanc et le texte noir
-let 
+let Trois = document.querySelector('p');
+Trois.addEventListener('click',()=> {
+    Trois.style.background = 'blue';
+    Trois.style.color = 'gold';  
+    if (Trois.style.background === 'blue' && Trois.style.color === 'gold') {
+    }   else {
+            Trois.style.background = 'white';
+            Trois.style.color = 'black';
+        }
+    })
